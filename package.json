@@ -1,0 +1,22 @@
+{
+  "name": "console-log-tests",
+  "version": "0.0.1-0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run test-simple && npm run test-time",
+    "test-simple": "cd simple; truffle test; cd -",
+    "test-time": "cd time-travel; truffle test; cd -"
+  },
+  "keywords": [],
+  "author": "Amal Sudama <cds-sudama@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@ganache/console.log": "^0.2.0",
+    "debug": "^4.3.4",
+    "truffle-assertions": "^0.9.2"
+  }
+}
